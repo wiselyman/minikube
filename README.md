@@ -26,6 +26,8 @@ docker info
 cd $GOPATH/src/k8s.io/
 git clone https://github.com/kubernetes/minikube.git
 ```
+大家不要克隆本文的源码，本文的源码只是参考演示作用。
+
 ### 4.替换镜像
 用开发工具打开`minikube`目录，我使用的是`Intellij Idea`,全局替换`gcr.io/google_containers`为`registry.cn-hangzhou.aliyuncs.com/google_containers`
 因为我这次使用的`minikube`版本较新，阿里云没有最新版本的`kube-dns`和`kube-dashboard`，所以`kube-dns-controller.yaml`中的image版本由`1.14.2`,`dashboard-rc.yaml`中的image版本由`v1.6.1`，改为`v1.6.0`,大家以后自己编译的时候可以在[https://dev.aliyun.com/search.html](https://dev.aliyun.com/search.html)检索下阿里云中最新镜像版本。
