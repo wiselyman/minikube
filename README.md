@@ -60,4 +60,4 @@ wangyunfeideMBP:out wangyunfei$ kubectl proxy
 Starting to serve on 127.0.0.1:8001
 ```
 浏览器访问[http://127.0.0.1:8001/](http://127.0.0.1:8001/ui)
-![image](dashboard.png)
+![image](https://raw.githubusercontent.com/wiselyman/minikube/master/dashboard.png)
