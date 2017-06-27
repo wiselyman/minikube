@@ -3,7 +3,7 @@
 - 手动通过阿里云下载所需的google镜像
 
 今天我在这里提供第三种方案，这种方案的优势是，我在本文编译的`minikube`，大家下载回去无需多余设置即可使用。本方法原理是修改`minikube`源码，将google镜像修改为阿里云镜像.
-目前我只在MacOS下做了编译，Windows下原理一样，有时间我会便以一个windows供大家下载，大家有兴趣也可以自己编译.
+目前我只在MacOS下做了编译，Windows下原理一样，有时间我会编译一个windows版本供大家下载，大家有兴趣也可以自己编译.
 ### 1.安装go并配置GOPATH
 - 使用`Homebrew`安装go语言：`brew install go`
 - 在环境变量中配置`GOPATH`,`.bash_profile`中添加`export GOPATH=~/Documents/go
