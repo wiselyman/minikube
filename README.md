@@ -30,7 +30,7 @@ git clone https://github.com/kubernetes/minikube.git
 
 ### 4.替换镜像
 用开发工具打开`minikube`目录，我使用的是`Intellij Idea`,全局替换`gcr.io/google_containers`为`registry.cn-hangzhou.aliyuncs.com/google_containers`
-因为我这次使用的`minikube`版本较新，阿里云没有最新版本的`kube-dns`和`kube-dashboard`，所以`kube-dns-controller.yaml`中的image版本由`1.14.2`,`dashboard-rc.yaml`中的image版本由`v1.6.1`，改为`v1.6.0`,大家以后自己编译的时候可以在[https://dev.aliyun.com/search.html](https://dev.aliyun.com/search.html)检索下阿里云中最新镜像版本。
+因为我这次使用的`minikube`版本较新，阿里云没有最新版本的`kube-dns`和`kube-dashboard`，所以`kube-dns-controller.yaml`中的image版本由`1.14.2`改为`1.14.1`,`dashboard-rc.yaml`中的image版本由`v1.6.1`，改为`v1.6.0`,大家以后自己编译的时候可以在[https://dev.aliyun.com/search.html](https://dev.aliyun.com/search.html)检索下阿里云中最新镜像版本。
 
 ### 5.编译
 在minikube目录下执行`make`命令进行编译,可执行文件将生成在当前目录下的out目录下，其中`minikube`,`minikube-darwin-amd64`均可。
